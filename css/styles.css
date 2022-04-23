@@ -1,0 +1,115 @@
+body{
+  text-align: center;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+h1{
+  font-family: 'Sacramento', cursive;
+  margin: 50px auto 0 auto;
+  line-height: 2;
+  font-size: 5.625rem;
+  color: #66BFBF;
+}
+
+h2{
+  font-family: 'Monteserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+ h3{
+   color: #11999E;
+ }
+
+ p{
+   font-size: 0.75rem;
+ }
+
+hr{
+ border-style: dotted none none; /*or border-style: none, border-top-style: dotted */
+ border-color: #8785a2;
+ border-width: 5px; /* this is the width of the border */
+ height: 10px;
+ width: 5%;
+}
+
+span{
+  text-decoration: underline;
+}
+
+.bio{
+  width: 50%;
+  margin: auto;
+  margin-bottom: 100px;
+  font-size: 1rem;
+}
+
+.flute-image{
+  width: 15%;
+  /* width is scaled down to 25% of PARENT */
+
+  float: left;
+  /* this makes the text wrap around the left of image!! */
+
+  margin-right: 20px;
+  /* helps separate the image and the floating text */
+}
+
+.personal-images{
+  width: 25%;
+}
+
+.swimming{
+  width: 30%;
+  float: right;
+  margin-left: 20px;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  /* makes the skills section 1)more squished, from the width and
+  2)centered in the middle, and 100px from top and bottom */
+
+  text-align: left;
+  /* text left align overrides body's center align */
+
+  line-height: 2;
+  /* remember!! THIS IS A SCALE, SO it does NOT have UNITS */
+}
+
+.top-container{
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 25px;
+  /* color: #66BFBF; */
+  /* pushes everything down a little bit */
+}
+
+/* .middle-container{
+} */
+
+.bottom-container{
+  background-color: #66BFBF;
+  position: relative;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.top-cloud{
+  position: absolute;
+  /* first takes it out of the "flow" */
+  right:300px;
+  top: 50px;
+}
+
+.bottom-cloud{
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+  /* remember, parent is the top-container!!! */
+}
