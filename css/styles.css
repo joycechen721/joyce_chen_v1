@@ -1,43 +1,17 @@
-body{
-  text-align: center;
-  margin: 0;
-  font-family: 'Merriweather', serif;
+.top-container{
+  position: relative;
+  margin-bottom: 25px;
+  /* color: #66BFBF; */
+  /* pushes everything down a little bit */
 }
 
-h1{
-  font-family: 'Sacramento', cursive;
-  margin: 50px auto 0 auto;
-  line-height: 2;
-  font-size: 5.625rem;
-  color: #66BFBF;
+#cat{
+  position: absolute;
+  width: 20%;
+  right: 0px;
+  /* remember, parent is the top-container!!! */
 }
 
-h2{
-  font-family: 'Monteserrat', sans-serif;
-  font-size: 2.5rem;
-  color: #66BFBF;
-  font-weight: normal;
-}
-
- h3{
-   color: #11999E;
- }
-
- p{
-   font-size: 0.75rem;
- }
-
-hr{
- border-style: dotted none none; /*or border-style: none, border-top-style: dotted */
- border-color: #8785a2;
- border-width: 5px; /* this is the width of the border */
- height: 10px;
- width: 5%;
-}
-
-span{
-  text-decoration: underline;
-}
 
 .bio{
   width: 50%;
@@ -80,36 +54,12 @@ span{
   /* remember!! THIS IS A SCALE, SO it does NOT have UNITS */
 }
 
-.top-container{
-  background-color: #E4F9F5;
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-bottom: 25px;
-  /* color: #66BFBF; */
-  /* pushes everything down a little bit */
-}
-
-/* .middle-container{
-} */
-
 .bottom-container{
   background-color: #66BFBF;
   position: relative;
   margin-top: 50px;
   padding-top: 50px;
-}
-
-.top-cloud{
-  position: absolute;
-  /* first takes it out of the "flow" */
-  right:300px;
-  top: 50px;
-}
-
-.bottom-cloud{
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
-  /* remember, parent is the top-container!!! */
+  #cat {
+    display: none;
+  }
 }
