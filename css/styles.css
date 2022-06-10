@@ -10,23 +10,24 @@
 .nav-bar{
     position: relative;
     width: 100%;
-    background: white;
+    background: transparent;
+    z-index: 1000;
 }
 
 .nav-list{
-    margin: 10px 50px;
+    margin: 7px 50px;
     font-size: 1.1rem;
 }
 
 .scrolled {
   position: fixed;
-  background-color: #F5EDF0 !important;
+  background-color: #95D9C3 !important;
   transition: background-color 200ms linear;
 }
 
 .icon{
-    width: 43px;
-    height: 50px;
+    width: 60px;
+    height: 100%;
 }
 
 .home-icon{
@@ -46,6 +47,8 @@
   justify-content: center;
   grid-template-columns: 50% 50%;
   width: 100%;
+  overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .landing-left{
@@ -61,20 +64,21 @@
   gap: 20px;
 }
 
+.right-properties{
+  justify-self:left;
+  margin-left: 50px;
+}
+
 .landing-hi{
   grid-row: 1;
-  justify-self: center;
   line-height: 1;
-  margin-left: 50px;
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
 .profile-img{
-  margin-left: 50px;
   grid-row: 2;
-  justify-self: left;
-  width: 150px;
-  height: 150px;
+  width: 40%;
+  height: 100%;
 }
 
 .round{
@@ -82,8 +86,17 @@
 }
 
 .my-links{
-  margin-left: 50px;
-  background: #111;
+  width: 100%
+}
+
+.circle {
+  float: left;
+  height: 100px;
+  margin-right: 20px;
+  width: 100px;
+  background-color: #A5F8D3;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 #cat{
@@ -93,7 +106,18 @@
   /* remember, parent is the top-container!!! */
 }
 
+.left-properties{
+  background: #DFD9E2;
+  width: 90%;
+  border-radius: 15px;
+}
+
 .bio{
+
+}
+
+.status{
+
 }
 
 .flute-image{
