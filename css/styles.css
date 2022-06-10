@@ -1,8 +1,14 @@
 .top-container{
   position: relative;
   margin-bottom: 25px;
+  height: 100vh;
   /* color: #66BFBF; */
   /* pushes everything down a little bit */
+}
+
+.nav-bar{
+    position: fixed;
+    width: 100%;
 }
 
 #cat{
@@ -12,6 +18,14 @@
   /* remember, parent is the top-container!!! */
 }
 
+.profile-img{
+  width: 150px;
+  height: 150px;
+}
+
+.round{
+  border-radius: 15px;
+}
 
 .bio{
   width: 50%;
