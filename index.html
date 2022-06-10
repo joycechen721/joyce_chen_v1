@@ -5,9 +5,10 @@
     <title>Joyce Chen</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="index.js"></script>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="bunny.ico">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
 
@@ -15,16 +16,24 @@
     <div class = "top-container">
       <div class = "nav-bar">
         <ul class = "nav-list">
+          <li class = "home-icon"><a href = "index.html"><img src = "images/duckie.png" class = "icon"></a></li>
           <li><a href="#contact">life</a></li>
           <li><a href="#news">projects</a></li>
           <li><a href="#home">experience</a></li>
         </ul>
     </div>
-      <div class = "sticky">
-        <!-- <img src="images/jiji_gif.gif" alt="jiji the cat" id = "cat"> -->
-      </div>
-      <h1 class = "landing-hi">hi there! i'm joyce chen ♡</h1>
+
+    <div class = "landing-grid">
+      <div class = "landing-left">
+      <h1 class = "landing-hi">hi! i'm joyce chen ♡</h1>
       <img src = "images/joyce pfp.jpg" class = "profile-img round">
+      <div class = "my-links"> links. </div>
+    </div>
+    <div class = "landing-right">
+      <div class = "bio"> </div>
+      <div class = "status"></div>
+    </div>
+  </div>
     </div>
 
 <!-- ACTUAL CONTENT -->
@@ -64,22 +73,6 @@
       <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
       <p>© 2020 Joyce Chen.</p>
     </div>
-
-    <script>
-    $(document).ready(function(){
-  $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if (scroll > 300) {
-	    $(".nav-bar").css("background" , "blue");
-	  }
-
-	  else{
-		  $(".nav-bar").css("background" , "#333");
-	  }
-  })
-})
-
-    </script>
 
   </body>
 </html>

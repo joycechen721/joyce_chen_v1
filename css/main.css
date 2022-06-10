@@ -14,7 +14,7 @@ html, body {
 h1{
   font-family: 'Sacramento', cursive;
   margin: 0 auto 0 auto;
-  font-size: 5.625rem;
+  font-size: 5rem;
   color: #66BFBF;
 }
 
@@ -71,5 +71,5 @@ li a {
 }
 
 li a:hover {
-  background-color: #F5EDF0;
+  color: #F5EDF0;
 }
