@@ -6,9 +6,25 @@
   /* pushes everything down a little bit */
 }
 
+/* NAV BAR STUFF */
 .nav-bar{
     position: fixed;
     width: 100%;
+    background: white;
+}
+
+.nav-list{
+    margin: 10px 50px;
+    font-size: 1.1rem;
+}
+
+.scrolled {
+  background-color: #886F68 !important;
+  transition: background-color 200ms linear;
+}
+
+.landing-hi{
+  padding-top: 100px;
 }
 
 #cat{
