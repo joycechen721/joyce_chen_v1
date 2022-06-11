@@ -16,7 +16,7 @@ html, body {
 h1{
   font-family: 'Sacramento', cursive;
   margin: 0 auto 0 auto;
-  font-size: 5rem;
+  font-size: 5.3rem;
   color: #66BFBF;
 }
 
@@ -33,6 +33,7 @@ h2{
 
  p{
    font-size: 0.75rem;
+   text-align: left;
  }
 
 hr{

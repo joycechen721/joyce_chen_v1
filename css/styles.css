@@ -1,7 +1,7 @@
 .top-container{
   position: relative;
   margin-bottom: 25px;
-  height: 100vh;
+  height: 100%;
   /* color: #66BFBF; */
   /* pushes everything down a little bit */
 }
@@ -22,7 +22,7 @@
 .scrolled {
   position: fixed;
   background-color: #95D9C3 !important;
-  transition: background-color 200ms linear;
+  transition: background-color 50ms linear;
 }
 
 .icon{
@@ -45,10 +45,34 @@
   float: left;
   gap: 20px;
   justify-content: center;
-  grid-template-columns: 50% 50%;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 50px;
+
+}
+
+@media (max-width: 1000px) {
+  .profile-img{width: 60% !important;}
+}
+
+@media screen and (max-width: 900px) {
+  .circle{
+    height: 90px !important;
+    margin-right: 10px !important;
+    width: 90px !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .landing-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width: 750px){
+    .right-properties{justify-self: center; }
+    .circle{
+      height: 120px !important;
+      margin-right: 20px !important;
+      width: 120px !important;
+    }
 }
 
 .landing-left{
@@ -58,18 +82,18 @@
 }
 
 .landing-right{
-  grid-column: 2;
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: auto auto;
   gap: 20px;
 }
 
-.right-properties{
+.left-properties{
   justify-self:left;
   margin-left: 50px;
 }
 
 .landing-hi{
+  text-align: left;
   grid-row: 1;
   line-height: 1;
   padding-top: 20px;
@@ -86,7 +110,7 @@
 }
 
 .my-links{
-  width: 100%
+  max-width: 100%
 }
 
 .circle {
@@ -106,8 +130,8 @@
   /* remember, parent is the top-container!!! */
 }
 
-.left-properties{
-  background: #DFD9E2;
+.right-properties{
+  background: #FFE3DC;
   width: 90%;
   border-radius: 15px;
 }
@@ -152,6 +176,10 @@
 
   line-height: 2;
   /* remember!! THIS IS A SCALE, SO it does NOT have UNITS */
+}
+
+.middle-container{
+  margin-top: 100px;
 }
 
 .bottom-container{
