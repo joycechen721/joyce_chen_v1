@@ -3,13 +3,13 @@ body{
   font-family: 'Merriweather', serif;
   line-height: 1.5;
   background: #F9F4DC;
+  min-height: 100vh;
 }
 
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
     /* overflow-x: hidden; */
 }
 
