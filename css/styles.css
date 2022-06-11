@@ -17,12 +17,27 @@
 .nav-list{
     margin: 7px 50px;
     font-size: 1.1rem;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav-link{
+  float: right;
+}
+
+.nav-link a{
+  display: block;
+  color: #424c55;;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .scrolled {
   position: fixed;
   background-color: #95D9C3 !important;
   transition: background-color 50ms linear;
+  opacity: 80%;
 }
 
 .icon{
@@ -131,17 +146,55 @@
 }
 
 .right-properties{
-  background: #FFE3DC;
+  background: #A2AD91;
   width: 90%;
   border-radius: 15px;
 }
 
 .bio{
+  display: flex;
+  justify-content: center;
+  max-width: 60%;
+  margin: 15px;
+  background-color: white;
+}
 
+.bio p{
+  padding: 20px;
+  color: #424c55;
+  font-size: 1rem;
+}
+
+.rando-bio img{
+  width: 30%;
+  float: right;
+  margin: 20px;
 }
 
 .status{
+  text-align: left;
+  color: white;
+}
 
+.status-title{
+  font-size: 2rem;
+  text-shadow: -.030em .030em #FFF6E6,   -.08em .08em #E7DCD7;
+  margin: 10px 0 10px 20px;
+}
+
+.status-list{
+  margin: auto;
+}
+
+.grow{
+transition: 1s ease;
+}
+
+.grow :hover{
+-webkit-transform: scale(1.01);
+-ms-transform: scale(1.01);
+transform: scale(1.01);
+transition: 1s ease;
 }
 
 .flute-image{

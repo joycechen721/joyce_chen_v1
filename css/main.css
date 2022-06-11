@@ -16,7 +16,7 @@ html, body {
 h1{
   font-family: 'Sacramento', cursive;
   margin: 0 auto 0 auto;
-  font-size: 5.3rem;
+  font-size: 6rem;
   color: #66BFBF;
 }
 
@@ -55,24 +55,15 @@ div.sticky {
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
 li {
-  float: right;
 }
 
 li a {
-  display: block;
-  color: #424c55;;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+
 }
 
 li a:hover {
-  color: #F5EDF0;
+  color: #66BFBF;
 }
