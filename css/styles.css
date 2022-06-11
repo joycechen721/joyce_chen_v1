@@ -66,7 +66,7 @@
 }
 
 @media (max-width: 1000px) {
-  .profile-img{width: 60% !important;}
+  .profile-img{width: 70% !important;}
 }
 
 @media screen and (max-width: 900px) {
@@ -88,6 +88,25 @@
       margin-right: 20px !important;
       width: 120px !important;
     }
+}
+
+@media screen and (max-width: 500px){
+  .circle{
+    border-radius: 15px !important;
+    height: 80px !important;
+    margin-bottom: 10px;
+    width: 70% !important;
+    float: none !important;
+  }
+  .left-properties{
+    width: 100%;
+    justify-self: center !important;
+    margin-left: 0 !important;
+  }
+  .landing-hi{
+    font-size: 4rem !important;
+    text-align: center !important;
+  }
 }
 
 .landing-left{
@@ -183,7 +202,7 @@
 }
 
 .status-list{
-  margin: auto;
+  margin-bottom: 20px;
 }
 
 .grow{
