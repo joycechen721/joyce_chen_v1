@@ -1,6 +1,11 @@
 .section{
-    /* padding: 2rem; */
-    min-height: 600px;
+}
+
+.fa-brands, .fab, .fa-solid{
+  color: black;
+  font-size: 3em;
+  position: relative;
+  top: 25%;
 }
 
 .top-container{
@@ -61,9 +66,10 @@
   display: grid;
   position: relative;
   float: left;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
   width: 100%;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 
@@ -77,7 +83,9 @@
 }
 
 @media screen and (min-width: 800px) {
-  .landing-grid { grid-template-columns: repeat(2, 1fr); }
+  .landing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 800px){
@@ -188,8 +196,6 @@
 
 .bio p{
   padding: 20px;
-  color: #424c55;
-  font-size: 1rem;
 }
 
 .rando-bio img{
@@ -211,6 +217,7 @@
 
 .status-list{
   margin-bottom: 20px;
+  list-style-type: circle;
 }
 
 .grow{
@@ -220,6 +227,11 @@ transition: 1s ease;
 .grow :hover{
   transform: scale(1.01);
   transition: 1s ease;
+}
+
+.container{
+  padding: 2rem;
+  margin-left: 50px;
 }
 
 .flute-image{
@@ -245,8 +257,8 @@ transition: 1s ease;
 
 .skill-row{
   width: 50%;
-  margin: 100px auto 100px auto;
-  /* makes the skills section 1)more squished, from the width and
+  margin: 0;
+  /* margin: 100px auto 100px auto; makes the skills section 1)more squished, from the width and
   2)centered in the middle, and 100px from top and bottom */
 
   text-align: left;
@@ -256,12 +268,14 @@ transition: 1s ease;
   /* remember!! THIS IS A SCALE, SO it does NOT have UNITS */
 }
 
-.bottom-container{
-  background-color: #66BFBF;
+.footer{
+  background-color: #95D9C3;
   position: relative;
   margin-top: 50px;
   padding-top: 50px;
-  #cat {
-    display: none;
-  }
+  text-align: center;
+}
+
+.footer p{
+  text-align: center;
 }

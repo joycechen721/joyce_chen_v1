@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="bunny.ico">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cookie&family=Dancing+Script:wght@500&family=Montez&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8cf230ce72.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
 
@@ -32,9 +34,15 @@
         <h1 class = "landing-hi left-properties">hi! i'm joyce chen.</h1>
         <img src = "images/joyce pfp.jpg" class = "profile-img round left-properties">
         <div class = "my-links left-properties">
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
+          <a href = "https://github.com/winterberry123" target=”_blank”><span class="circle">
+            <i class="fa-brands fa-github"></i>
+          </span></a>
+          <a href = "https://www.linkedin.com/in/joyce-chen-ahs/" target=”_blank”><span class="circle" style="background-color: #FBCDC1">
+            <i class="fa-brands fa-linkedin"></i>
+          </span></a>
+          <a href = "https://bit.ly/joycechenresume" target=”_blank”><span class="circle" style = "background-color: #B9C297">
+            <i class="fa-solid fa-file"></i>
+          </span></a>
         </div>
       </div>
       <div class = "landing-right grow">
@@ -43,7 +51,7 @@
             <img src = "images/tororo2.gif" class = "round">
           </div>
           <div class = "bio round">
-            <p>Hello there :) I'm a rising undergrad freshman at UCLA studying Computer Science, hoping to minor in another field. Currently still a rookie coder, but we're getting there I hope. I also sometimes forget all the things that constitute me, so this website will help me record them.</p>
+            <p>Hello there :) I'm a rising undergrad freshman at UCLA studying <b>Computer Science </b>, hoping to minor in another field. Lived and breathed Bay Area air for 10+ years of my life. Currently still a rookie coder, but we're getting there I hope.</p>
           </div>
         </div>
         <div class = "status right-properties">
@@ -51,8 +59,8 @@
           <ul class = "status-list">
             <li>doing Duke's <a href = "https://www.coursera.org/specializations/java-programming">Java specialization course.</a></li>
             <li>learning C++ and DS/Algo (to not fail college)!</li>
-            <li>pretending to be productive by perfecting my Notion!</li>
-            <li>crying over <a href = "https://www.webtoons.com/en/romance/seasonsofblossom/list?title_no=2509&page=1"> Seasons of Blossom</a> :'[</li>
+            <li>pretending to be productive by perfecting my Notion.</li>
+            <li>reading webtoons and crying over <a href = "https://www.webtoons.com/en/romance/seasonsofblossom/list?title_no=2509&page=1"> Seasons of Blossom</a> :'[</li>
           </ul>
         </div>
       </div>
@@ -60,38 +68,41 @@
   </div>
 </section>
 
-<hr>
-
 <!-- ACTUAL CONTENT -->
     <section class="section">
-      <div class="experience">
-        <h2>experience.</h2>
-      </div>
       <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img src="images/flute.png" alt="flute.png" class="flute-image">
-          <h3>PLAYING THE FLUTE</h3>
-          <p>I have been playing the flute since 4th grade. I'm part of the Senior Orchestra at California Youth Symphony, and I have won awards like the 2020 USOMC 1st Place. I've also passed the ABRSM Grade 8 with distinction. I hope to continue playing in college and beyond!</p>
+      <div class = "container">
+        <div class="experience">
+          <h2>experience.</h2>
         </div>
-        <div class="skill-row">
-          <img class="swimming" src="images/swim.jpg" alt="">
-          <h3>SWIMMING</h3>
-          <p>Swimming has always been an integral part of my life. Not only does it help me destress, but it also is a great way to exercise and stay in shape! I recently graduated from a swim club at Calphin. I still have lots to improve, but Im getting there!</p>
+        <div class="skills">
+          <div class="skill-row">
+            <img src="images/flute.png" alt="flute.png" class="flute-image">
+            <h3>PLAYING THE FLUTE</h3>
+            <p>I have been playing the flute since 4th grade. I'm part of the Senior Orchestra at California Youth Symphony, and I have won awards like the 2020 USOMC 1st Place. I've also passed the ABRSM Grade 8 with distinction. I hope to continue playing in college and beyond!</p>
+          </div>
+          <div class="skill-row">
+            <img class="swimming" src="images/swim.jpg" alt="">
+            <h3>SWIMMING</h3>
+            <p>Swimming has always been an integral part of my life. Not only does it help me destress, but it also is a great way to exercise and stay in shape! I recently graduated from a swim club at Calphin. I still have lots to improve, but Im getting there!</p>
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Click the links below to contact me!</h3>
-        <p>If you have any questions or business inquiries, feel free to hit me up!</p>
-        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+      </section>
+
+        <hr>
+
+      <section class = "section">
+        <div class="container contact-me">
+          <h2>projects.</h2>
+        </div>
       </div>
     </section>
 
 
-    <div class="bottom-container">
+    <div class="footer">
+      <h3>Click the links below to contact me!</h3>
+      <p>If you have any questions or business inquiries, feel free to hit me up!</p>
+      <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
       <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
       <a class="footer-link" href="https://twitter.com/">Twitter</a>
       <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
