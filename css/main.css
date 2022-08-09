@@ -4,6 +4,7 @@
   --silver: #ECE9E9;
   --teal: #66BFBF;
   --purple: #C2ADFF;
+  --orange-highlight: #F4AE3E;
 
   --ff-poppins: 'Poppins', sans-serif;
 
@@ -50,7 +51,7 @@ h2{
 }
 
  h3{
-   color: #09D9C0;
+   color: var(--dark-lavendar);
  }
 
  p{
@@ -73,9 +74,6 @@ div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-
-ul {
 }
 
 li {
