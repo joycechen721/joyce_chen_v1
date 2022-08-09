@@ -1,9 +1,24 @@
+:root {
+  --dark-lavendar: #8894AA;
+  --rice: #FAF9F9;
+  --silver: #ECE9E9;
+  --teal: #66BFBF;
+  --purple: #C2ADFF;
+
+  --ff-poppins: 'Poppins', sans-serif;
+
+  --fw-300: 300;
+
+  --rounded: 15px;
+}
+
 body{
   text-align: center;
   /* font-family: 'Merriweather', serif; */
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-300);
   line-height: 1.5;
-  background: #EBFFEB;
+  background: #FAF9F9;
   min-height: 100vh;
 }
 
@@ -15,17 +30,20 @@ html, body {
     /* overflow-x: hidden; */
 }
 
+a:hover {
+  color: var(--purple);
+}
+
 h1{
-  font-family: 'Montez', cursive;
   margin: 0 auto 0 auto;
-  font-size: 6rem;
-  color: #5A9E93;
+  font-size: 3rem;
+  color: var(--dark-lavendar);
   /* color: #09D9C0; */
 }
 
 h2{
-  font-size: 3rem;
-  color: #09D9C0;
+  font-size: 2rem;
+  color: var(--dark-lavendar);
   font-weight: normal;
   text-align: left;
   margin: 0;
@@ -40,6 +58,7 @@ h2{
    line-height: 1.6em;
    color: #424c55;
    font-size: 1rem;
+   margin: 0;
  }
 
 hr{
@@ -60,12 +79,9 @@ ul {
 }
 
 li {
+  text-align: left;
 }
 
 li a {
   color: inherit;
-}
-
-li a:hover {
-  color: #66BFBF;
 }

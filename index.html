@@ -5,71 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joyce Chen</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="bunny.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cookie&family=Dancing+Script:wght@500&family=Montez&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="icon" href="images/bunny.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/8cf230ce72.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
   </head>
 
   <body>
   <!-- NAV BAR -->
   <div class = "nav-bar">
-    <ul class = "nav-list">
-      <li class = "home-icon"><a href = "index.html"><img src = "images/tororo.png" class = "icon"></a></li>
+    <ul class = "nav-list" id = "topNav">
+      <li class = "home-icon"><a href = "index.html"><img src = "images/gude.png" class = "icon"></a></li>
       <li class = "nav-link"><a href="#contact">life ఌ</a></li>
       <li class = "nav-link"><a href="#news">projects 𖧧</a></li>
       <li class = "nav-link"><a href="#home">experience 𖤐</a></li>
+      <li class="menu" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </li>
     </ul>
   </div>
 
-  <!-- LANDING PAGE!! -->
-    <section class = "section">
-      <div class = "top-container">
-      <div class = "landing-grid">
-        <div class = "landing-left">
-        <h1 class = "landing-hi left-properties">hi! i'm joyce chen.</h1>
-        <img src = "images/joyce pfp.jpg" class = "profile-img round left-properties">
-        <div class = "my-links left-properties">
-          <a href = "https://github.com/winterberry123" target=”_blank”><span class="circle">
-            <i class="fa-brands fa-github"></i>
-          </span></a>
-          <a href = "https://www.linkedin.com/in/joyce-chen-ahs/" target=”_blank”><span class="circle" style="background-color: #FBCDC1">
-            <i class="fa-brands fa-linkedin"></i>
-          </span></a>
-          <a href = "https://bit.ly/joycechenresume" target=”_blank”><span class="circle" style = "background-color: #B9C297">
-            <i class="fa-solid fa-file"></i>
-          </span></a>
+  <!-- NEW LANDING PAGE -->
+<section>
+  <div class="container flex-container">
+    <div class="left-landing frame">
+      <h1>Hi! I'm joyce chen 👋</h1>
+      <img src="images/pfp2.jpeg" class = "crop shadow" alt="joyce chen">
+      <div class="separator"></div>
+
+      <ul class="contacts-list">
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <img src="images/mail.png" class = "crop2" alt="email-icon">
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:joycechen721@ucla.g.edu" class="contact-link">joycechen721@ucla.edu</a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <img src="images/birthday-cake.png" class = "crop2" alt="bday-icon">
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Borthday</p>
+            <p class="contact-link">September 3</p>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <img src="images/location.png" class = "crop2" alt="location-icon">
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>A Mentally Unstable Place</address>
+          </div>
+        </li>
+
+        <div class = "my-links">
+          <button type="button" name="button">more links!!</button>
+          <div class="collapse my-links">
+            <a href = "https://github.com/winterberry123" target=”_blank”><span class="circle">
+              <i class="fa-brands fa-github"></i>
+            </span></a>
+            <a href = "https://www.linkedin.com/in/joyce-chen-ahs/" target=”_blank”><span class="circle">
+              <i class="fa-brands fa-linkedin"></i>
+            </span></a>
+            <a href = "https://bit.ly/joycechenresume" target=”_blank”><span class="circle">
+              <i class="fa-solid fa-file-csv"></i>
+            </span></a>
+            <a href = "https://bit.ly/joycechenresume" target=”_blank”><span class="circle">
+              <i class="fa-brands fa-instagram"></i>
+            </span></a>
+          </div>
         </div>
+      </ul>
+    </div>
+
+    <div class="right-landing">
+      <div class = "frame">
+        <p>✏️ HEY THERE :) Aside from being a part-time chaotic mess, I'm also a rising UCLA undergraduate freshman studying <b>Computer Science</b>!
+          Like any typical CS major, I thrive on the amount of breathtaking satisfaction I receive from getting my code to finally run...
+          which sadly does not happen too often. In my uni years, I'm also hoping to explore other fields such as biotechnology, fintech, and AI -- stuff that encompasses both the real world and software.
+          Even so, I'm still a very rookie coder who hasn't yet seen the vast potential of CS, but we're getting there I hope :pp
+          Having breathed Bay Area air for 10+ years of my life, I'm super excited to nyoom to SoCal. Next 4!</p>
       </div>
-      <div class = "landing-right grow">
-        <div class = "right-properties">
-          <div class = "rando-bio">
-            <img src = "images/tororo2.gif" class = "round">
-          </div>
-          <div class = "bio round">
-            <p>Hello there :) I'm a rising undergrad freshman at UCLA studying <b>Computer Science </b>, hoping to minor in another field. Lived and breathed Bay Area air for 10+ years of my life. Currently still a rookie coder, but we're getting there I hope.</p>
-          </div>
-        </div>
-        <div class = "status right-properties">
-          <h2 class = "status-title">STATUS...</h2>
-          <ul class = "status-list">
-            <li>doing Duke's <a href = "https://www.coursera.org/specializations/java-programming">Java specialization course.</a></li>
-            <li>learning C++ and DS/Algo (to not fail college)!</li>
-            <li>pretending to be productive by perfecting my Notion.</li>
-            <li>reading webtoons and crying over <a href = "https://www.webtoons.com/en/romance/seasonsofblossom/list?title_no=2509&page=1"> Seasons of Blossom</a> :'[</li>
-          </ul>
-        </div>
+      <div class="frame">
+        <h2>STATUS...</h2>
+        <ul>
+          <li>doing Duke's <a href = "https://www.coursera.org/specializations/java-programming">Java specialization course.</a></li>
+          <li>learning C++ and DS/Algo (to not fail college)!</li>
+          <li>pretending to be productive by perfecting my Notion.</li>
+          <li>reading webtoons and crying over <a href = "https://www.webtoons.com/en/romance/seasonsofblossom/list?title_no=2509&page=1"> Seasons of Blossom</a> :'[</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ACTUAL CONTENT -->
-    <section class="section">
+    <section>
       <hr>
       <div class = "container">
         <div class="experience">
@@ -77,12 +116,12 @@
         </div>
         <div class="skills">
           <div class="skill-row">
-            <img src="images/flute.png" alt="flute.png" class="flute-image">
+            <!-- <img src="images/flute.png" alt="flute.png" class="flute-image"> -->
             <h3>PLAYING THE FLUTE</h3>
             <p>I have been playing the flute since 4th grade. I'm part of the Senior Orchestra at California Youth Symphony, and I have won awards like the 2020 USOMC 1st Place. I've also passed the ABRSM Grade 8 with distinction. I hope to continue playing in college and beyond!</p>
           </div>
           <div class="skill-row">
-            <img class="swimming" src="images/swim.jpg" alt="">
+            <!-- <img class="swimming" src="images/swim.jpg" alt=""> -->
             <h3>SWIMMING</h3>
             <p>Swimming has always been an integral part of my life. Not only does it help me destress, but it also is a great way to exercise and stay in shape! I recently graduated from a swim club at Calphin. I still have lots to improve, but Im getting there!</p>
           </div>
@@ -109,6 +148,9 @@
       <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
       <p>© designed & developed by Joyce Chen wink wonk '22</p>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
 
   </body>
 </html>
