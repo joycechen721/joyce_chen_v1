@@ -136,6 +136,13 @@
   width: 100%;
 }
 
+.crop3{
+  width: 100%;
+  height: 300px;
+  border-radius: 7%;
+  filter: drop-shadow(3px 3px 5px pink) grayscale(50%);
+}
+
 .foxie{
   width: 150px;
   height: 150px;
@@ -195,10 +202,6 @@
 }
 
 /* COOL LIST */
-.two-columns {
-  display: -webkit-flex;
-  flex-direction: row;
-}
 
 .flower-item {
   position: relative;
@@ -207,13 +210,13 @@
 
 .flower-item:not(:last-child) { margin-bottom: 20px; }
 
-.flower-item:not(:first-child):not(:last-child)::before {
+.flower-item:not(:last-child)::before {
   content: "";
   position: absolute;
-  top: -30px;
+  top: 13px;
   left: -27px;
   width: 0.5px;
-  height: calc(100% + 70px);
+  height: calc(100% + 30px);
   background: black;
 }
 
@@ -226,4 +229,74 @@
   left: -38px;
   height: 7px;
   width: 6px;
+}
+
+/* EXPERIENCE SECTION */
+.skills{
+  text-align: left;
+}
+
+.skill-row{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.xp-title{
+  color: var(--orange-highlight);
+  margin: 0;
+  display: inline;
+}
+
+.logo{
+  display: inline;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.life{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 35px; */
+}
+
+.life-img{
+  position: relative;
+  max-width: 80%;
+}
+
+.life-img .overlay{
+  position: absolute;
+  border-radius: 7%;
+  padding: 17px;
+  text-align: justify;
+  line-height: 1.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  display: none;
+  color: #FFF;
+}
+
+.life-heading{
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-show {
+  display: block !important;
+  background: rgba(0, 0, 0, .6);
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.hidden{
+  display: none;
 }
