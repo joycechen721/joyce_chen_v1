@@ -15,9 +15,9 @@
   <div class = "nav-bar">
     <ul class = "nav-list" id = "topNav">
       <li class = "home-icon"><a href = "index.html"><img src = "images/snail.png" class = "icon"></a></li>
-      <li class = "nav-link"><a href="#contact">life ఌ</a></li>
-      <li class = "nav-link"><a href="#news">projects 𖧧</a></li>
-      <li class = "nav-link"><a href="#home">experience 𖤐</a></li>
+      <li class = "nav-link"><a href="#life">life ఌ</a></li>
+      <li class = "nav-link"><a href="#projects">projects 𖧧</a></li>
+      <li class = "nav-link"><a href="#xp">experience 𖤐</a></li>
       <li class="menu" onclick="myFunction()">
           <i class="fa fa-bars"></i>
       </li>
@@ -87,7 +87,7 @@
     <div class="right-landing">
       <div class = "frame">
         <h2>About Me</h2>
-        <p>✏️ HEY BUDDS :) Aside from being a part-time chaotic mess, I'm also a rising UCLA undergrad freshman studying <b>Computer Science</b>!
+        <p>✏️ HEY BUDDS :) Aside from being a part-time chaotic mess, I'm also a rising <b>UCLA undergrad freshman</b> studying <b>Computer Science</b>!
           Like any other CS major, I THRIVE on the <s>seratonin boost</s> satisfaction from finally getting my code to run successfully...
           which sadly does not happen very often. <br>In my uni years, I hope to explore fields such as biotech, fintech, and AI — stuff that encompasses both the real world and software, that is not EE.
           Currently, I'm still a rookie coder who has barely yet dabbled with the surface of CS. But we're getting down to the ocean floor someday, I hope!
@@ -111,7 +111,7 @@
 <hr>
 
 <!-- ACTUAL CONTENT -->
-    <section>
+    <section id = "xp">
       <div class = "container flex-container">
         <div class="frame">
           <h2>experience.</h2>
@@ -122,7 +122,9 @@
               <h3 class = "xp-title">Superposition</h3>
               <ul>
                 <li class = "flower-item">
+                  <b>
                   Superposition VI Operations, June 2022
+                  </b>
                   <p>hello</p>
                 </li>
                 <li class = "flower-item">
@@ -154,89 +156,92 @@
           </div>
         </div>
 
-        <div class="frame">
-          <h3>skills</h3>
-          <ul>
-            <li>web development</li>
-          </ul>
+        <div class="sidebar">
+          <div class="frame" style="margin-bottom: 15px">
+            <h3>skills</h3>
+            <ul>
+              <li>web development</li>
+              <li>html/css, react, nodejs, express, git, jquery</li>
+            </ul>
+          </div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/39UQcboiZ9vj6MjOI11uRk?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
-
       </section>
 
 <hr>
 
-      <section>
-        <div class = "container">
-          <div class="frame">
-            <h2>projects.</h2>
+    <section id = "projects">
+      <div class = "container">
+        <div class="frame">
+          <h2>projects.</h2>
         </div>
       </div>
     </section>
 
 <hr>
-    <section>
-      <div class = "container ">
-        <div class="frame">
-          <h2>life.</h2>
-          <div class="flex-container life">
-            <button type="button" class="button1" onclick = "plusSlides(-1)"> < </button>
-            <button type="button" class="button2" onclick = "plusSlides(1)"> > </button>
-          </div>
+
+  <section id = "life">
+    <div class = "container">
+      <div class="frame life-frame">
+        <h2>life.</h2>
+        <p>highlights in my life. both the depresso expresso parts ☕️ and the jolly happy parts 🍜</p>
+        <div class="flex-container life">
+          <button type="button" class="button1" onclick = "plusSlides(-1)"> < </button>
+          <button type="button" class="button2" onclick = "plusSlides(1)"> > </button>
+        </div>
       </div>
     </div>
   </section>
 
-<div class="hidden">
-  <div class = "life-img" id = "0">
-    <img src="images/IMG_4652.jpg" class = "crop3" alt="">
-    <div class="life-heading">
-      Taiwan
-      <br>
-      2014 & 2016
+  <section class="hidden">
+    <div class = "life-img" id = "0">
+      <img src="images/IMG_4652.jpg" class = "crop3" alt="">
+      <div class="life-heading">
+        Taiwan
+        <br>
+        2014 & 2016
+      </div>
+      <div class="overlay" id = "taiwan">
+        Despite it happening nearly a decade ago, my study abroad experience in Taiwan remains the most influential part of my life. I am forever grateful to have had the opportunity to meet so many wonderful friends, view life through a completely different lens, and connect to my culture on a deeper level. Friends, if you ever obtain the chance to study abroad, GO FOR IT! You'll come back with so so many warm memories like I did :)
+      </div>
     </div>
-    <div class="overlay" id = "taiwan">
-      Despite it happening nearly a decade ago, my study abroad experience in Taiwan remains the most influential part of my life. I am forever grateful to have had the opportunity to meet so many wonderful friends, view life through a completely different lens, and connect to my culture on a deeper level. Friends, if you ever obtain the chance to study abroad, GO FOR IT! You'll come back with so so many warm memories like I did :)
+    <div class = "life-img" id = "1">
+      <img src="images/IMG_0096.jpg" class = "crop3" alt="">
+      <div class="life-heading">
+        Concerts
+      </div>
+      <div class="overlay" id = "concerts">
+        Insert: music! Ah, a path full of small up's and steep down's, a path
+      </div>
     </div>
-  </div>
-  <div class = "life-img" id = "1">
-    <img src="images/IMG_0096.jpg" class = "crop3" alt="">
-    <div class="life-heading">
-      Concerts
+    <div class = "life-img" id = "2">
+      <img src="images/IMG_3239.jpg" class = "crop3" alt="">
+      <div class="life-heading">
+        Covid
+      </div>
+      <div class="overlay" id = "covid">
+        The content to be displayed on :hover adfsdfs fsdfsdf sdfasdf
+      </div>
     </div>
-    <div class="overlay" id = "concerts">
-      Insert: music! Ah, a path full of small up's and steep down's, a path
+    <div class = "life-img" id = "3">
+      <img src="images/IMG_0078.jpg" class = "crop3" alt="">
+      <div class="life-heading">
+        Friendos
+      </div>
+      <div class="overlay" id = "friends">
+        The content to be displayed on :hover adfsdfs fsdfsdf sdfasdf
+      </div>
     </div>
-  </div>
-  <div class = "life-img" id = "2">
-    <img src="images/IMG_3239.jpg" class = "crop3" alt="">
-    <div class="life-heading">
-      Covid
+    <div class = "life-img" id = "4">
+      <img src="images/IMG_3927.jpg" class = "crop3" alt="">
+      <div class="life-heading">
+        Trips
+      </div>
+      <div class="overlay" id = "trips">
+        The content to be displayed on :hover adfsdfs fsdfsdf sdfasdf
+      </div>
     </div>
-    <div class="overlay" id = "covid">
-      The content to be displayed on :hover adfsdfs fsdfsdf sdfasdf
-    </div>
-  </div>
-  <div class = "life-img" id = "3">
-    <img src="images/IMG_3239.jpg" class = "crop3" alt="">
-    <div class="life-heading">
-      4th Slide
-    </div>
-    <div class="overlay" id = "g">
-      The content to be displayed on :hover adfsdfs fsdfsdf sdfasdf
-    </div>
-  </div>
-  <div class = "life-img" id = "4">
-    <img src="images/IMG_3239.jpg" class = "crop3" alt="">
-    <div class="life-heading">
-      5th Slide
-    </div>
-    <div class="overlay" id = "h">
-      The content to be displayed on :hover adfsdfs fsdfsdf sdfasdf
-    </div>
-  </div>
-</div>
-
-
+  </section>
 
 
     <div class="footer">
@@ -246,7 +251,7 @@
       <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
       <a class="footer-link" href="https://twitter.com/">Twitter</a>
       <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-      <p>© designed & developed by Joyce Chen wink wonk '22</p>
+      <p>© designed & developed by Joyce Chen wink wonk '22 💛</p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

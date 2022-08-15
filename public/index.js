@@ -22,50 +22,67 @@ function myFunction(){
 function showDes(){
   if ($(this).is("#0")){
     $("#taiwan").toggleClass("overlay-show");
-    $("#concerts").removeClass("overlay-show");
-    $("#covid").removeClass("overlay-show");
   }
   else if ($(this).is("#1")){
     $("#concerts").toggleClass("overlay-show");
-    $("#taiwan").removeClass("overlay-show");
-    $("#covid").removeClass("overlay-show");
   }
   else if ($(this).is("#2")){
     $("#covid").toggleClass("overlay-show");
-    $("#concerts").removeClass("overlay-show");
-    $("#taiwan").removeClass("overlay-show");
+  }
+  else if ($(this).is("#3")){
+    $("#friends").toggleClass("overlay-show");
+  }
+  else if ($(this).is("#4")){
+    $("#trips").toggleClass("overlay-show");
   }
 }
 
-$(".life-img").click(showDes).hover(showDes);
+$(".life-img").hover(showDes);
 
 const cards = 5;
 let slideIndex = 0;
-showSlides(slideIndex);
+let num;
+const single = window.matchMedia("(max-width: 1000px)");
+const double = window.matchMedia("(max-width: 1400px)");
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+single.addListener(slideNumber);
+double.addListener(slideNumber);
+
+slideNumber();
+
+function slideNumber() {
+  if (single.matches) {
+    num = 1;
+  }
+  else if (double.matches) {
+    num = 2;
+  }
+  else num = 3;
+  showSlides(slideIndex, num);
 }
 
-function showSlides(index) {
+
+function plusSlides(n) {
+  showSlides(slideIndex += n, num);
+}
+
+function showSlides(index, num) {
   let i;
   let button = $(".button2")
-
   if (index >= cards) {slideIndex = 0}
-  if (index <= 0) {slideIndex = cards}
-
+  if (index < 0) {slideIndex = cards - 1}
   var j = 0;
-  while(j < 3){
+  while(j < num){
     if (index + j >= cards) index -= cards;
+    if (index + j < 0) index = cards - 1;
     button.before($("#" + (index + j)));
     $("#" + (index + j)).css("display", "block");
     console.log("append " + (index + j));
     j++;
   }
-
   var k = 0;
-  var temp = index + 3;
-  while(k < cards - 3){
+  var temp = index + num;
+  while(k < cards - num){
     if (temp + k >= cards) temp -= cards;
     $("#" + (temp + k)).css("display", "none");
     console.log("remove " + (temp+k));
