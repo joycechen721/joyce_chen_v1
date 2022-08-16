@@ -52,6 +52,7 @@ h2{
 
  h3{
    color: var(--dark-lavendar);
+   margin: 0;
  }
 
  p{

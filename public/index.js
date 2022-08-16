@@ -20,16 +20,16 @@ function myFunction(){
 }
 
 function showDes(){
-  if ($(this).is("#0")){
+  if ($(this).is("#3")){
     $("#taiwan").toggleClass("overlay-show");
   }
-  else if ($(this).is("#1")){
+  else if ($(this).is("#0")){
     $("#concerts").toggleClass("overlay-show");
   }
-  else if ($(this).is("#2")){
+  else if ($(this).is("#1")){
     $("#covid").toggleClass("overlay-show");
   }
-  else if ($(this).is("#3")){
+  else if ($(this).is("#2")){
     $("#friends").toggleClass("overlay-show");
   }
   else if ($(this).is("#4")){
