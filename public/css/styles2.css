@@ -63,7 +63,7 @@
     display: block;
     text-align: left;
   }
-  .life button{
+  #projects button{
     font-size: 1rem !important;
   }
   .circle{
@@ -207,16 +207,12 @@
   margin: 17px;
   border: 1px solid;
   border-color: #8d99ae;
+  -webkit-box-shadow: -15px 12px pink;
+          box-shadow: -15px 12px pink;
 }
 
 .crop2{
   width: 100%;
-}
-
-.foxie{
-  width: 150px;
-  height: 150px;
-  float:right;
 }
 
 .my-links{
@@ -228,17 +224,6 @@
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-}
-
-.links-button{
-    background-color: var(--silver);
-    border: none;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
 }
 
 .circle {
@@ -260,11 +245,6 @@
 .fa-bars{
   padding-top: 15px;
   font-size: 1.9em;
-}
-
-.shadow{
-  -webkit-box-shadow: -15px 12px pink;
-          box-shadow: -15px 12px pink;
 }
 
 /* LANDING CONTACTS */
@@ -332,7 +312,7 @@
 .flower-item::after {
   content: '𐐪𐑂';
   font-size: 1.2em;
-  color: var(--orange-highlight);
+  color: var(--dark-lavendar);
   position: absolute;
   top: 0px;
   left: -38px;
@@ -423,7 +403,7 @@
 }
 
 #xp ul{
-  margin: 5px 0 10px 10px;
+  margin: 5px 0 5px 0px;
 }
 
 #xp .flower-item:not(:last-child) {
@@ -472,7 +452,7 @@
 }
 
 .other-courses a{
-  text-decoration: underline 1.2px;
+  text-decoration: underline 1.5px;
   cursor: pointer;
 }
 
@@ -516,6 +496,22 @@
   width: 100%;
 }
 
+#projects button{
+  background-color: inherit;
+  border: none;
+  /* color: white; */
+  /* padding: 10px 15px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  border-radius: 8px;
+}
+
+#projects button:hover{
+  background-color: lightblue;
+}
+
 /* LIFE SECTION */
 .life{
   -webkit-box-pack: space-evenly;
@@ -528,22 +524,6 @@
   margin-top: 30px;
   margin-bottom: 25px;
   border-radius: 15px;
-}
-
-.life button{
-  background-color: inherit;
-  border: none;
-  /* color: white; */
-  /* padding: 10px 15px; */
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.6rem;
-  border-radius: 8px;
-}
-
-.life button:hover{
-  background-color: lightblue;
 }
 
 .life-img{
@@ -638,7 +618,7 @@
   z-index: 100;
 }
 
-/* TAIWAN */
+/* GALLERY */
 .gallery{
   display: inline-block;
 }

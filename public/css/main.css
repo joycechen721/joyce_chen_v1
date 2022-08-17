@@ -1,5 +1,5 @@
 :root {
-  --dark-lavendar: #8894AA;
+  --dark-lavendar: #585365;
   --rice: #FAF9F9;
   --silver: #ECE9E9;
   --teal: #66BFBF;
@@ -44,7 +44,7 @@ mark{
 
 h1{
   margin: 0 auto 0 auto;
-  font-size: 3rem;
+  font-size: 3.3rem;
   color: var(--dark-lavendar);
   /* color: #09D9C0; */
 }

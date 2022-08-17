@@ -47,7 +47,7 @@ function showDes(){
 
 $(".life-img").hover(showDes);
 
-const cards = 5;
+const cards = 3;
 let slideIndex = 0;
 let num;
 const single = window.matchMedia("(max-width: 1000px)");

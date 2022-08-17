@@ -31,7 +31,7 @@
   <div class="landing-container flex-container">
     <div class="left-landing frame">
       <h1>hi! I'm joyce chen 👋</h1>
-      <img src="images/pfp1.jpeg" class = "crop shadow" alt="joyce chen">
+      <img src="images/pfp1.jpeg" class = "crop" alt="joyce chen">
       <div class="separator"></div>
 
       <ul class="contacts-list">
@@ -56,19 +56,8 @@
           </div>
         </li>
 
-        <li class="contact-item">
-          <div class="icon-box">
-            <img src="images/target.png" class = "crop2" alt="target-icon">
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">Motto</p>
-            <address>"Decide to be extraordinary." ― Epictetus</address>
-          </div>
-        </li>
-
         <div class = "my-links">
-          <button type="button" class="links-button">🙃 ▶️ ▶️</button>
-          <div class="collapse collapse-side my-links">
+          <div class="my-links">
             <a href = "https://github.com/winterberry123" target=”_blank”><span class="circle">
               <i class="fa-brands fa-github"></i>
             </span></a>
@@ -89,21 +78,19 @@
     <div class="right-landing">
       <div class = "frame">
         <h2>about me </h2>
-        <p>✏️ HEY BUDDS :) Aside from being a part-time chaotic mess, I'm also a rising <b>UCLA undergrad freshman</b> studying <b>Computer Science</b>!
-          Like any other CS major, I THRIVE on the <s>seratonin boost</s> satisfaction from finally getting my code to run successfully...
-          which sadly does not happen very often. <br>In my uni years, I hope to explore fields such as biotech, fintech, and AI — stuff that encompasses both the real world and software, and that is not EE.
+        <p>✏️ Hello! Aside from being a part-time chaotic mess, I'm also a rising <b>UCLA undergrad freshman</b> studying <b>Computer Science</b>!
+          Like any other CS major, I thrive on the <s>seratonin boost</s> satisfaction from finally getting my code to run successfully...
+          which unfortunately does not happen very often. <br>In my uni years, I hope to explore fields such as biotech, fintech, and AI — stuff that encompasses both the real world and software, and that is not EE.
           Currently, I'm still a rookie coder who has barely yet dabbled with the surface of CS. But we're getting down to the ocean floor someday, I hope!
-          As of late, I am more than excited to leave my Bay Area bubble and nyoom to LA~ yay traffic & calves!</p>
+          As of late, I am more than excited to leave my Bay Area bubble and nyoom to LA — yay traffic & calves!</p>
       </div>
       <div class="frame">
         <h2>status 📝 </h2>
           <ul>
-            <li class="flower-item">learning C++ and DS/Algo (to not fail college)!</li>
-            <img src="images/foxie.png" class = "foxie" alt="">
-            <li class="flower-item">attempting to be productive by perfecting my Notion pages.</li>
-            <li class="flower-item">reading webtoons and crying over <a href = "https://www.webtoons.com/en/romance/seasonsofblossom/list?title_no=2509&page=1"> Seasons of Blossom</a> :'[</li>
+            <li class="flower-item">learning C++, fullstack dev, DS/Algorithms</li>
+            <li class="flower-item">reading webtoons like <a href = "https://www.webtoons.com/en/romance/seasonsofblossom/list?title_no=2509&page=1"> Seasons of Blossom</a></li>
             <li class="flower-item">listening to my fav artists: dpr ian, enhypen, iu, vaundy 🎵</li>
-            <li class="flower-item">working on this website! might be recreating it using react.</li>
+            <li class="flower-item">working on this website. might be recreating it using react</li>
           </ul>
       </div>
     </div>
@@ -135,7 +122,7 @@
                 <li class = "flower-item">
                   <mark>Chapter Manager, '21-22</mark>
                   <p>Facilitates 125 chapters across 19 countries & 18 US states; Executes ideas for chapter bonding, integration, and inclusion like monthly "chapter conferences."
-</p>
+                  </p>
                 </li>
                 <li class = "flower-item">
                   <mark>Fremont Chapter Tech Team, '20-22</mark>
@@ -167,7 +154,7 @@
 
         <div class="sidebar">
           <div class="frame2">
-            <h3>skills</h3>
+            <h3>relevant skills</h3>
             <ul>
               <li>languages: java, javascript, c++</li>
               <li>technologies: html/css, react, nodejs, express, git, jquery</li>
@@ -241,21 +228,23 @@
         <div class="frame">
           <h2>projects.</h2>
           <div class="flex-container">
-            <div class="card">
+            <button type="button" class="button1" onclick = "plusSlides(-1)"> ⏪ </button>
+            <div class="card" id = "0">
               <img src="images/placeholder.jpeg" alt="">
               <h3>3d-smt gui </h3>
-              <p>description alksdjfalsdjkf asfjklsjf klsjdkfjs jskladjf lkasjsjafkljklsajf lkjskfljskjfskaljfkl sjfk j jflk akslfjslakj kjask fjsaklfjalks jsadjfalk sjlfk</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             </div>
-            <div class="card">
+            <div class="card" id = "1">
               <img src="images/placeholder.jpeg" alt="">
               <h3>universify</h3>
-              <p>description alksdjfalsdjkf asfjklsjf klsjdkfjs jskladjf lkasjsjafkljklsajf lkjskfljskjfskaljfkl sjfk j jflk akslfjslakj kjask fjsaklfjalks jsadjfalk sjlfk</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             </div>
-            <div class="card">
+            <div class="card" id = "2">
               <img src="images/placeholder.jpeg" alt="">
               <h3>org websites</h3>
-              <p>description alksdjfalsdjkf asfjklsjf klsjdkfjs jskladjf lkasjsjafkljklsajf lkjskfljskjfskaljfkl sjfk j jflk akslfjslakj kjask fjsaklfjalks jsadjfalk sjlfk</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             </div>
+            <button type="button" class="button2" onclick = "plusSlides(1)"> ⏩ </button>
           </div>
         </div>
       </div>
@@ -267,11 +256,10 @@
   <section id = "life">
     <div class = "container">
       <div class="frame">
-        <h2>life.</h2>
-        <p>a quick unasked-for detour into my life. both the depresso expresso parts ☕️ and the jolly happy parts 🍜</p>
+        <h2>more about me.</h2>
+        <p>an unasked-for detour into my life and whatnot. tea > coffee ☕️ </p>
         <div class="flex-container life">
-          <button type="button" class="button1" onclick = "plusSlides(-1)"> ⏪ </button>
-          <button type="button" class="button2" onclick = "plusSlides(1)"> ⏩ </button>
+
         </div>
 
         <hr>
@@ -281,36 +269,33 @@
           <div class="frame2">
             <h3>kdrama rec's ☔️</h3>
               <ul>
-                <li>inspiring: <em>25 21, misaeng, itaewon class, my mister</em></li>
-                <li>swoon-worthy: <em>goblin, 18 again, CLOY, nevertheless</em></li>
-                <li>crime thrillers: <em>flower of evil, signal, my name, vagabond</em></li>
-                <li>light: <em>true beauty, weightlifting fairy kim bok joo, extraordinary you, yumi's cells, hello my 20's</em></li>
+                <li>inspiring: 25 21, misaeng, itaewon class, my mister</li>
+                <li>swoon-worthy: goblin, 18 again, CLOY, nevertheless</li>
+                <li>crime thrillers: flower of evil, signal, my name, vagabond</li>
+                <li>light: true beauty, extraordinary you, yumi's cells, hello my 20's</li>
               </ul>
           </div>
           <div class="frame2">
             <h3>anime rec's 🍡</h3>
               <ul>
-                <li>movies: <em>howl's moving castle, whisper of the heart</em></li>
-                <li>chill: <em>your lie in april, great pretender, horimiya</em></li>
-                <li>shounen: <em>demon slayer, attack on titan, parasyte, jjk</em></li>
+                <li>movies: howl's moving castle, whisper of the heart</li>
+                <li>chill: your lie in april, great pretender, horimiya</li>
+                <li>shounen: demon slayer, attack on titan, parasyte, jjk</li>
               </ul>
           </div>
           <div class="frame2">
-            <h3>music rec's ⏯</h3>
+            <h3>album rec's 🎙</h3>
               <ul>
-                <li><em>moodswings in this order</em> by dpr ian</li>
-                <li><em>~how i'm feeling~</em> by lauv</li>
-                <li><em>planet her</em> by doja cat</li>
-                <li>lofi: kayou, kurochuu, kato</li>
-                <li>chinese artists: lil ghost, hua chenyu, zhou shen, eric chou, mao buyi, ren ran</li>
+                <li>moodswings in this order by dpr ian</li>
+                <li>~how i'm feeling~ by lauv</li>
+                <li>planet her by doja cat</li>
               </ul>
           </div>
           <div class="frame2">
-            <h3>fav's 🪷</h3>
+            <h3>fav's 🤌</h3>
               <ul>
                 <li>cats & corgis. samoyeds too.</li>
                 <li>cafe's, bookstores, green tea, harry potter, royalty core</li>
-                <li>studio ghibli & joe hisaishi 🌊</li>
                 <li>kpop: stray kids, sunoo (daily dose of ☀️), mamamoo</li>
                 <li>youtubers: linh truong, dustin vuong, urmomashley, leahsfieldnotes</li>
               </ul>
@@ -320,7 +305,7 @@
       </div>
     </div>
 
-    <div class="hidden">
+    <!-- <div class="hidden">
       <div class = "life-img" id = "3">
         <img src="/images/taiwan/IMG_4652.JPG" alt="">
         <div class="life-heading">
@@ -385,7 +370,8 @@
           </p>
         </div>
         </a>
-      </div>
+      </div> -->
+
     </div>
   </section>
 
@@ -393,9 +379,7 @@
     <div class="footer">
       <div class="main-footer">
         <p><b>© Joyce Chen in the momentuous year of '22</b></p>
-
         <p><em>it was the dawn of great beginnings, it was the dusk of undesirable pasts~</em></p>
-        <p>special thanks to mom and dad 💝 wink wonk 💛💛</p>
         <a class="btn" href="mailto:joycechen721@ucla.g.edu">CONTACT ME</a>
         <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
         <a class="footer-link" href="https://joycechen-newsletter.herokuapp.com/">Newsletter</a>
