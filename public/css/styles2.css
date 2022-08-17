@@ -205,6 +205,8 @@
   width: 40%;
   border-radius: 10%;
   margin: 17px;
+  border: 1px solid;
+  border-color: #8d99ae;
 }
 
 .crop2{
@@ -222,7 +224,7 @@
   display: -ms-flexbox;
   display: flex;
 
-  gap: 20px;
+  /* gap: 20px; */
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -236,6 +238,7 @@
     text-decoration: none;
     border-radius: 8px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .circle {
@@ -244,6 +247,7 @@
   width: 80px;
   background-color: #ECE9E9;
   border-radius: 30%;
+  margin: 0 10px 0 10px;
 }
 
 .fa-brands, .fab, .fa-solid{
@@ -338,9 +342,9 @@
 
 /* EXPERIENCE & SKILLS SECTION */
 #xp{
-  -webkit-box-flex: 75%;
-      -ms-flex: 75%;
-          flex: 75%;
+  -webkit-box-flex: 65%;
+      -ms-flex: 65%;
+          flex: 65%;
 }
 
 .sidebar{
@@ -348,6 +352,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 35%;
+      -ms-flex: 35%;
+          flex: 35%;
 }
 
 .sidebar ul{
@@ -402,8 +409,7 @@
 
 #xp h3{
   color: var(--dark-lavendar);
-  margin: 0;
-  display: inline;
+  margin: 15px 0 0 0;
   font-size: 1.3rem;
 }
 
@@ -463,6 +469,11 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.other-courses a{
+  text-decoration: underline 1.2px;
+  cursor: pointer;
 }
 
 /* PROJECTS SECTION */
@@ -589,6 +600,14 @@
 
 .hidden{
   display: none;
+}
+
+#media-reccs ul{
+  margin-block-start: 7px;
+}
+
+#media-reccs li{
+  margin-bottom: 5px;
 }
 
 /* FOOTER */

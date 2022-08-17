@@ -4,14 +4,18 @@ $(function () {
   });
 });
 
-$("div.collapse").hide();
-
+$(".collapse").hide();
 $(".links-button").click(function(){
-  $("div.collapse").toggle("slide");
+  $(".collapse-side").toggle("slide");
 });
-
 $("#algo1").click(function(){
-  
+  $(".collapse1").toggle("slideDown");
+});
+$("#duke").click(function(){
+  $(".collapse2").toggle("slideDown");
+});
+$("#udemy").click(function(){
+  $(".collapse3").toggle("slideDown");
 });
 
 function myFunction(){
