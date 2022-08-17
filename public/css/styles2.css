@@ -28,6 +28,34 @@
   /* gap: 15px; */
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+  .nav-link {display: none;}
+  .menu {
+    float: right;
+    display: block;
+  }
+  .nav-link.home-icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .nav-list.responsive {position: relative;}
+  .nav-list.responsive .menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-list.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .life button{
+    font-size: 1rem !important;
+  }
+}
+
 @media (max-width: 800px) {
   .flex-container {
     -webkit-box-orient: vertical;
@@ -41,6 +69,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .card{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer img{
+    display: none;
   }
 }
 
@@ -95,36 +133,6 @@
 
 .home-icon a{
   padding: 0;
-}
-
-@media screen and (max-width: 600px) {
-  .nav-link {display: none;}
-  .menu {
-    float: right;
-    display: block;
-  }
-  .nav-link.home-icon{
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .nav-list.responsive {position: relative;}
-  .nav-list.responsive .menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav-list.responsive li {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .footer img{
-    display: none;
-  }
 }
 
 /* LANDING PAGE STUFF */
@@ -246,7 +254,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40px;
+  /* gap: 40px; */
 }
 
 .contact-title{
@@ -269,6 +277,7 @@
           align-items: center;
   font-size: 16px;
   z-index: 1;
+  margin-right: 40px;
 }
 
 /* COOL LIST */
@@ -332,7 +341,7 @@
   border: 1px solid #8894AA;
   border-radius: 0 15px 0 15px;
   padding: 15px;
-  margin-bottom: 15px;
+  margin: 0 15px 15px 0;
   background-color: white;
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
