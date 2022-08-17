@@ -66,6 +66,19 @@
   .life button{
     font-size: 1rem !important;
   }
+  .circle{
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .fa-brands, .fab, .fa-solid{
+    font-size: 2em !important;
+  }
+  .left-landing ul{
+    padding-inline-start: 20px;
+  }
+  .card{
+    margin: 7px;
+  }
 }
 
 @media (max-width: 800px) {
