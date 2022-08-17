@@ -10,6 +10,10 @@ $(".links-button").click(function(){
   $("div.collapse").toggle("slide");
 });
 
+$("#algo1").click(function(){
+  
+});
+
 function myFunction(){
   var x = document.getElementById("topNav");
   if (x.className === "nav-list") {
