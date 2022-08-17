@@ -1,0 +1,23 @@
+{
+  "name": "joyce_chen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winterberry123/joyce_chen.git"
+  },
+  "author": "joyce chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winterberry123/joyce_chen/issues"
+  },
+  "homepage": "https://github.com/winterberry123/joyce_chen#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "express": "^4.18.1"
+  }
+}
