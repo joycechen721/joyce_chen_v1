@@ -30,6 +30,18 @@
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 600px) {
+  .container{
+    padding: 10px;
+  }
+  .landing-container{
+    padding: 0 10px 10px 10px;
+  }
+  .icon-box{
+    margin-right: 20px !important;
+  }
+  .crop{
+    width: 60% !important;
+  }
   .nav-link {display: none;}
   .menu {
     float: right;
@@ -448,7 +460,7 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  /* gap: 20px; */
   margin-top: 15px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -466,6 +478,7 @@
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   padding: 25px;
+  margin: 15px;
 }
 
 .card:hover{
