@@ -63,9 +63,6 @@
     display: block;
     text-align: left;
   }
-  #projects button{
-    font-size: 1rem !important;
-  }
   .circle{
     width: 50px !important;
     height: 50px !important;
@@ -78,10 +75,10 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .card{
     margin: 7px;
-    width: 100% !important;
+    width: auto !important;
     max-width: 100% !important;
   }
 }
@@ -99,6 +96,9 @@
 @media screen and (max-width: 1000px) {
   .footer img{
     display: none;
+  }
+  .card{
+    height: fit-content !important;
   }
 }
 
@@ -480,9 +480,14 @@
   margin: 0 0 15px 0;
 }
 
+.project-cards{
+  position: relative;
+}
+
 .card{
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
+  height: 550px;
   width: 325px;
   max-width: 47%;
   border-radius: 5%;
@@ -517,19 +522,28 @@
 }
 
 #projects button{
+  position: absolute;
+  top: 50%;
   background-color: inherit;
   border: none;
-  /* color: white; */
-  /* padding: 10px 15px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.6rem;
   border-radius: 8px;
+  z-index: 100;
 }
 
 #projects button:hover{
   background-color: lightblue;
+}
+
+.button1{
+  left: 25px;
+}
+
+.button2{
+  right:25px;
 }
 
 /* LIFE SECTION */
