@@ -76,6 +76,16 @@
   .skills{
     margin: 0 !important;
   }
+  #projects button{
+    font-size: 1rem !important;
+  }
+  .button1{
+    left: 5px !important;
+  }
+
+  .button2{
+    right: 5px !important;
+  }
 }
 
 @media (max-width: 750px) {
