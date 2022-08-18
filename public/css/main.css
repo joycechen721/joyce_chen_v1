@@ -15,12 +15,14 @@
 
 body{
   text-align: center;
-  /* font-family: 'Merriweather', serif; */
   font-family: var(--ff-poppins);
   font-weight: var(--fw-300);
   line-height: 1.5;
   background: #FAF9F9;
   min-height: 100vh;
+  /* cursor: url(https://cdn.custom-cursor.com/db/8215/32/neon-butterfly-pointer.png) , auto; */
+  /* cursor: url(https://cdn.custom-cursor.com/db/9279/32/neon-hummingbird-and-feather-pointer.png) , auto; */
+  cursor: url(https://cdn.custom-cursor.com/db/10115/32/mochi-mochi-peach-cat-and-bubble-tea-pointer.png) , default!important;
 }
 
 html, body {
@@ -33,6 +35,7 @@ html, body {
 
 a:hover {
   color: var(--purple);
+  /* cursor: url(https://cdn.custom-cursor.com/db/8216/32/neon-butterfly-cursor.png) , pointer!important; */
 }
 
 mark{

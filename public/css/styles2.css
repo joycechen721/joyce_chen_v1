@@ -76,28 +76,23 @@
   .left-landing ul{
     padding-inline-start: 20px;
   }
+}
+
+@media (max-width: 700px) {
   .card{
     margin: 7px;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .flex-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 15px;
-  }
-  .life{
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .card{
-    width: 100% !important;
-    max-width: 100% !important;
   }
 }
 
@@ -204,7 +199,7 @@
 .crop{
   width: 40%;
   border-radius: 10%;
-  margin: 17px;
+  margin: 20px;
   border: 1px solid;
   border-color: #8d99ae;
   -webkit-box-shadow: -20px 12px pink;
@@ -358,6 +353,7 @@
   border-radius: 0 15px 0 15px;
   padding: 15px;
   margin: 0 15px 15px 0;
+  transition: .5s ease-out;
   background-color: white;
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
@@ -365,12 +361,17 @@
 }
 
 #media-reccs .frame2{
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  background: linear-gradient(to left, white 50%, #FFD6E4 50%) right;
+  background-size: 200%;
+  transition: 1s ease-out;
+
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 #media-reccs .frame2:hover{
+  background-position: left;
   -webkit-transform: scale(1.02);
       -ms-transform: scale(1.02);
           transform: scale(1.02);
@@ -480,15 +481,15 @@
 }
 
 .card{
-  width: 300px;
+  width: 325px;
   max-width: 47%;
   border-radius: 5%;
   -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
           box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
   background-color: var(--silver);
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
   padding: 25px;
   margin: 15px;
 }
@@ -500,8 +501,14 @@
 }
 
 .card img{
-  border-radius: 5px;
-  width: 100%;
+  border-radius: 10px;
+  width: 95%;
+  height: 270px;
+  filter: grayscale(0.2);
+}
+
+.card h3{
+  margin: 5px;
 }
 
 #projects button{
