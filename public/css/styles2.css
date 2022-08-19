@@ -174,7 +174,7 @@
 /* LANDING PAGE STUFF */
 .frame{
   max-width: 100%;
-  border: 1px solid #8894AA;
+  border: 1.5px solid #8894AA;
   border-radius: var(--rounded);
   padding: 20px;
   margin: 0 15px 15px 0;
@@ -395,7 +395,7 @@
 .frame2{
   /* min-width: 100px; */
   max-width: 100%;
-  border: 1px solid #8894AA;
+  border: 1.5px solid #8894AA;
   border-radius: 0 15px 0 15px;
   padding: 15px;
   margin: 0 15px 15px 0;
