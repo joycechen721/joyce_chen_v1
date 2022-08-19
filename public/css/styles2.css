@@ -22,13 +22,9 @@
   display: flex;
 
   -webkit-box-orient: horizontal;
-
   -webkit-box-direction: normal;
-
       -ms-flex-direction: row;
-
           flex-direction: row;
-  /* gap: 15px; */
 }
 
 /* MEDIA QUERIES */
@@ -85,7 +81,6 @@
   .button1{
     left: 5px !important;
   }
-
   .button2{
     right: 5px !important;
   }
