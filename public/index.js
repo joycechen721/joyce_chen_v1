@@ -51,7 +51,7 @@ const cards = 3;
 let slideIndex = 0;
 let num;
 const single = window.matchMedia("(max-width: 1000px)");
-const double = window.matchMedia("(max-width: 1400px)");
+const double = window.matchMedia("(max-width: 1325px)");
 
 single.addListener(slideNumber);
 double.addListener(slideNumber);

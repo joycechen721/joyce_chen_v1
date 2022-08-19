@@ -241,13 +241,13 @@
   float: left;
   height: 80px;
   width: 80px;
-  background-color: #ECE9E9;
+  background-color: var(--silver);
   border-radius: 30%;
   margin: 0 10px 0 10px;
 }
 
 .circle:hover{
-  background-color: pink;
+  background: linear-gradient(to left, rgba(255,221,236,1), rgba(221,236,255,1));
 }
 
 .fa-brands, .fab, .fa-solid{
@@ -260,6 +260,29 @@
 .fa-bars{
   padding-top: 15px;
   font-size: 1.9em;
+}
+
+.animate-text{
+  background-image: linear-gradient(
+    -225deg,
+    #FF85B4 0%,
+    #AD83C3 29%,
+    #FF478B 67%,
+    #72BCFD 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 /* LANDING CONTACTS */
@@ -359,7 +382,13 @@
 }
 
 .sidebar li{
-  margin: 7px;
+  margin: 10px 7px;
+}
+
+.sidebar h3{
+  font-size: 1.25rem;
+  margin-top: 3px;
+  margin-bottom: 10px;
 }
 
 .frame2{
@@ -377,13 +406,13 @@
 }
 
 #media-reccs .frame2{
-  background: linear-gradient(to left, white 50%, #FFD6E4 50%) right;
+  background: linear-gradient(to left, white 50%,
+  rgba(255,221,236,1) 0%, rgba(221,236,255,1) 100%) right;
   background-size: 200%;
-  transition: 1s ease-out;
 
-  -webkit-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 #media-reccs .frame2:hover{
@@ -458,15 +487,16 @@
   text-align: center;
   color: #2e3440;
   padding: 5px 10px;
-  border-radius: 10px;
 }
 
 .courses div{
-  background-color: pink;
+  background: linear-gradient(to left, rgba(255,221,236,1), rgba(221,236,255,1));
   margin: 7px 7px 7px 0;
   color: #2e3440;
   padding: 3px;
   border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
