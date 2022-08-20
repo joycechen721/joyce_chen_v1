@@ -3,8 +3,9 @@
   --rice: #FAF9F9;
   --silver: #ECE9E9;
   --teal: #66BFBF;
-  --purple: #C2ADFF;
+  --purple: #8383C3;
   --orange-highlight: #F4AE3E;
+  --frame:#707989;
 
   --ff-poppins: 'Poppins', sans-serif;
 
@@ -48,26 +49,22 @@ mark{
 h1{
   margin: 0 auto 0 auto;
   font-size: 3.1rem;
-  color: var(--dark-lavendar);
 }
 
 h2{
   font-size: 2rem;
-  color: var(--dark-lavendar);
   font-weight: 500;
   text-align: left;
   margin: 0;
 }
 
  h3{
-   color: var(--dark-lavendar);
    margin: 0;
  }
 
  p{
    text-align: left;
    line-height: 1.7em;
-   color: #424c55;
    font-size: 1rem;
    margin: 0;
  }

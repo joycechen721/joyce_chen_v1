@@ -169,7 +169,7 @@
 /* LANDING PAGE STUFF */
 .frame{
   max-width: 100%;
-  border: 1.5px solid #8894AA;
+  border: 1.5px solid var(--frame);
   border-radius: var(--rounded);
   padding: 20px;
   margin: 0 15px 15px 0;
@@ -390,7 +390,7 @@
 .frame2{
   /* min-width: 100px; */
   max-width: 100%;
-  border: 1.5px solid #8894AA;
+  border: 1.5px solid var(--frame);
   border-radius: 0 15px 0 15px;
   padding: 15px;
   margin: 0 15px 15px 0;
@@ -434,7 +434,6 @@
 }
 
 #xp h3{
-  color: var(--dark-lavendar);
   margin: 15px 0 0 0;
   font-size: 1.3rem;
 }

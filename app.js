@@ -20,6 +20,6 @@ app.get("/cs31", function(req, res){
   res.sendFile(__dirname + "/cs31.html");
 });
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Server is running on port 3000.");
+app.listen(process.env.PORT || 4000, function(){
+  console.log("Server is running on port 4000.");
 });
