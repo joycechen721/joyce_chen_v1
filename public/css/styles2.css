@@ -126,7 +126,7 @@
 }
 
 .nav-list{
-  margin: 15px 50px;
+  margin: 10px 35px;
   font-size: 1.1rem;
   list-style-type: none;
   overflow: hidden;
@@ -154,12 +154,17 @@
 }
 
 .icon{
-    width: 50px;
+    width: 45px;
     height: 100%;
 }
 
 .home-icon{
     float: left;
+}
+
+.home-icon img{
+  margin-top: 5px;
+  border-radius: 10%;
 }
 
 .home-icon a{
@@ -199,6 +204,22 @@
       -ms-flex-direction: column;
           flex-direction: column;
   /* gap: 15px; */
+}
+
+.hollow-text{
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.right-landing span{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight:bolder;
+  margin-left:5px;
+  /* color: blueviolet; */
+
 }
 
 .separator{
@@ -396,23 +417,25 @@
   margin: 0 15px 15px 0;
   transition: .5s ease-out;
   background-color: white;
+
+  background: linear-gradient(to left, white 50%,
+  rgba(255,221,236,1) 0%, rgba(221,236,255,1) 100%) right;
+  background-size: 200%;
+
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
 }
 
-#media-reccs .frame2{
-  background: linear-gradient(to left, white 50%,
-  rgba(255,221,236,1) 0%, rgba(221,236,255,1) 100%) right;
-  background-size: 200%;
-
-  -webkit-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+.frame2:hover{
+  background-position: left;
 }
 
 #media-reccs .frame2:hover{
-  background-position: left;
   -webkit-transform: scale(1.02);
       -ms-transform: scale(1.02);
           transform: scale(1.02);
@@ -500,6 +523,10 @@
 .other-courses a{
   text-decoration: underline 1.5px;
   cursor: pointer;
+}
+
+.other-courses li{
+  list-style: '🍙  ';
 }
 
 /* PROJECTS SECTION */
