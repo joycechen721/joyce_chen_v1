@@ -178,6 +178,7 @@
   border-radius: var(--rounded);
   padding: 20px;
   margin: 0 15px 15px 0;
+  background: white;
 }
 
 .left-landing{
@@ -416,15 +417,14 @@
   padding: 15px;
   margin: 0 15px 15px 0;
   transition: .5s ease-out;
-  background-color: white;
 
-  background: linear-gradient(to left, white 50%,
+  background: linear-gradient(to left, transparent 50%,
   rgba(255,221,236,1) 0%, rgba(221,236,255,1) 100%) right;
   background-size: 200%;
 
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
@@ -433,9 +433,6 @@
 
 .frame2:hover{
   background-position: left;
-}
-
-#media-reccs .frame2:hover{
   -webkit-transform: scale(1.02);
       -ms-transform: scale(1.02);
           transform: scale(1.02);

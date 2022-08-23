@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const autoprefixer = require('autoprefixer')
+const ejs = require('ejs')
 const postcss = require('postcss')
 
 // postcss([ autoprefixer ]).process(css).then(result => {
@@ -11,13 +12,14 @@ const postcss = require('postcss')
 // })
 
 app.use(express.static("public"));
+app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
-  res.sendFile(__dirname + "/index.html");
+  res.render('index');
 });
 
 app.get("/cs31", function(req, res){
-  res.sendFile(__dirname + "/cs31.html");
+  res.render('cs31');
 });
 
 app.listen(process.env.PORT || 4000, function(){
