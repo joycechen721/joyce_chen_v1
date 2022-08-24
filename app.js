@@ -1,9 +1,10 @@
 const express = require('express');
-const app = express();
 const ejs = require('ejs')
 const autoprefixer = require('autoprefixer')
 const postcss = require('postcss')
+const _ = require('lodash')
 
+const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -11,19 +12,31 @@ app.set("view engine", "ejs");
 const posts = [];
 
 app.get("/", function(req, res){
-  res.render('index');
+  res.render('index', {title: "Joyce Chen"});
 });
 
 app.get("/cs31", function(req, res){
-  res.render('cs31');
+  res.render('cs31', {title: "CS31 Review"});
 });
 
 app.get("/blog", function(req, res){
-  res.render('blog', {postsArr: posts});
+  res.render('blog', {postsArr: posts, title: "Blog"});
+})
+
+app.get("/blog/:postname", function(req, res){
+  const requestTitle = _.lowerCase(req.params.postname);
+  posts.forEach(function(element){
+    const postTitle = _.lowerCase(element.title);
+    const postContent = element.input;
+
+    if(postTitle == requestTitle){
+      res.render('blogpost', {title: postTitle, blogTitle: postTitle, content: postContent})
+    }
+  })
 })
 
 app.get("/compose", function(req, res){
-  res.render('compose');
+  res.render('compose', {title: "Compose"});
 })
 
 app.post("/compose", function(req, res){

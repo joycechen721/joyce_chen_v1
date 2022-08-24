@@ -740,9 +740,9 @@
 .compose{
   padding: 0 100px 0 100px;
 }
-.compose, h1{
+.compose h1{
   font-size: 2.5rem;
 }
-.blog, h1{
+.blog h1{
   font-size: 2.5rem;
 }

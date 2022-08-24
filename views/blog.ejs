@@ -3,7 +3,10 @@
     <h1>Blog v.1</h1>
     <% postsArr.forEach(function(element){ %>
         <h2><%=element.title%></h2>
-        <p><%=element.input%></p>
+        <p>
+          <%=element.input.substring(0, 100) + "..."%>
+          <a href="/blog/<%=element.title%>">Read More</a>
+        </p>
       <%}) %>
 </section>
 <%- include('partials/footer') -%>
