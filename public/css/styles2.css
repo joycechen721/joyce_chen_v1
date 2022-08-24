@@ -264,7 +264,7 @@
 }
 
 .circle:hover{
-  background: linear-gradient(to left, rgba(255,221,236,1), rgba(221,236,255,1));
+  background: var(--pinkgradient);
 }
 
 .fa-brands, .fab, .fa-solid{
@@ -505,7 +505,7 @@
 }
 
 .courses div{
-  background: linear-gradient(to left, rgba(255,221,236,1), rgba(221,236,255,1));
+  background: var(--pinkgradient);
   margin: 7px 7px 7px 0;
   color: #2e3440;
   padding: 3px;
@@ -734,4 +734,15 @@
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+/* COMPOSE BLOG*/
+.compose{
+  padding: 0 100px 0 100px;
+}
+.compose, h1{
+  font-size: 2.5rem;
+}
+.blog, h1{
+  font-size: 2.5rem;
 }

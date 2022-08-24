@@ -1,0 +1,23 @@
+<%- include('partials/header') -%>
+<section class = "compose">
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+      <p>
+        <label for="">Title</label>
+      </p>
+      <p>
+        <input type="text" name="title" required>
+      </p>
+      <p>
+        <label for="">Post</label>
+      </p>
+      <p>
+        <textarea name="newPost" rows="4" cols="50" required></textarea>
+      </p>
+      <p>
+        <button type="submit" name="button">Publish</button>
+      </p>
+
+    </form>
+</section>
+<%- include('partials/footer') -%>

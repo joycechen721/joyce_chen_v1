@@ -7,6 +7,8 @@
   --orange-highlight: #F4AE3E;
   --frame:#707989;
 
+  --pinkgradient: linear-gradient(to left, rgba(255,221,236,1), rgba(221,236,255,1));
+
   --ff-poppins: 'Poppins', sans-serif;
 
   --fw-300: 300;
@@ -94,4 +96,22 @@ a {
 
 li a {
   color: inherit;
+}
+
+form label, button{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+form button{
+  background: darkgray;
+  border-style: none;
+  border-radius: 10%;
+  padding: 7px;
+  color: white;
+}
+
+form input, textarea{
+  margin-bottom: 10px;
+  width: 100%;
 }
