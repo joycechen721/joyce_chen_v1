@@ -556,8 +556,8 @@
   width: 325px;
   max-width: 47%;
   border-radius: 5%;
-  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.25);
-          box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.25);
+          box-shadow: 0 0 15px rgba(0,0,0,0.25);
   background-color: white;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;

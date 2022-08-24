@@ -70,7 +70,7 @@ h2{
  }
 
 hr{
- border-top: 1px solid #8785a2;
+ border-top: 1px dashed black;
 }
 
 span{
