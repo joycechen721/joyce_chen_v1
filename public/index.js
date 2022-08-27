@@ -98,6 +98,41 @@ function showSlides(index, num) {
   }
 }
 
+$("#workshops").css("display", "none");
+$("#teaching").css("display", "none");
+$("#music").css("display", "none");
+var count = 0;
+function spin(){
+  var deg = [450, 900, 1350, 1800];
+  $(".box").css("transform", "rotate(" + deg[count] + "deg)");
+  if(count == 0){
+    $("#achievements").css("display", "none");
+    $("#workshops").css("display", "inline-block");
+    $("#teaching").css("display", "none");
+    $("#music").css("display", "none");
+  }
+  if(count == 1){
+    $("#achievements").css("display", "none");
+    $("#workshops").css("display", "none");
+    $("#teaching").css("display", "inline-block");
+    $("#music").css("display", "none");
+  }
+  if(count == 2){
+    $("#achievements").css("display", "none");
+    $("#workshops").css("display", "none");
+    $("#teaching").css("display", "none");
+    $("#music").css("display", "inline-block");
+  }
+  if(count == 3){
+    $("#achievements").css("display", "inline-block");
+    $("#workshops").css("display", "none");
+    $("#teaching").css("display", "none");
+    $("#music").css("display", "none");
+  }
+  count++;
+  if(count > 3) count = 0;
+}
+
 // var container = document.getElementById('animate');
 // var emoji = ['🌽', '🍇', '🍌', '🍒', '🍕', '🍷', '🍭', '💖', '💩', '🐷', '🐸', '🐳', '🎃', '🎾', '🌈', '🍦', '💁', '🔥', '😁', '😱', '🌴', '👏', '💃'];
 // var circles = [];

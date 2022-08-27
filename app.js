@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 const posts = [];
 
 app.get("/", function(req, res){
-  res.render('index', {title: "Joyce Chen"});
+  res.render('index', {title: "Joyce Chen", postsArr: posts});
 });
 
 app.get("/cs31", function(req, res){
@@ -42,10 +42,12 @@ app.get("/compose", function(req, res){
 app.post("/compose", function(req, res){
   const post = {
     title: req.body.title,
-    input: req.body.newPost
+    input: req.body.newPost,
+    url: req.body.url,
+    url2: req.body.url2
   };
-  posts.push(post);
-  res.redirect("/blog");
+  posts.unshift(post);
+  res.redirect("/#blog");
 })
 
 app.listen(process.env.PORT || 4000, function(){
