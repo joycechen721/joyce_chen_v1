@@ -70,7 +70,7 @@
     font-size: 2em !important;
   }
   .left-landing ul{
-    padding-inline-start: 20px;
+    padding-inline-start: 20px !important;
   }
   .skills{
     margin: 0 !important;
@@ -91,6 +91,12 @@
   .pie img {
     width: 350px !important;
     height: 350px !important;
+  }
+  .piedesc ul{
+    padding-inline-start: 20px !important;
+  }
+  .pie{
+    align-self: center !important;
   }
   .spin{
     width: 50px !important;
@@ -534,6 +540,10 @@
 
 .other-courses a{
   text-decoration: underline 2.5px orchid;
+   -webkit-text-decoration-line:  underline;
+   -webkit-text-decoration-color: orchid;
+   -webkit-text-decoration-style: solid;
+   -webkit-text-decoration-thickness: 2.5px;
   cursor: pointer;
 }
 
@@ -705,7 +715,6 @@
 .pie{
   position: relative;
   display: inline-block;
-  margin-right: 40px;
 }
 
 .pie img{
@@ -737,18 +746,30 @@
 
 #achievements h2{
   text-decoration: underline red;
+   -webkit-text-decoration-line:  underline;
+   -webkit-text-decoration-color: red;
+   -webkit-text-decoration-style: solid;
 }
 
 #workshops h2{
   text-decoration: underline brown;
+   -webkit-text-decoration-line:  underline;
+   -webkit-text-decoration-color: brown;
+   -webkit-text-decoration-style: solid;
 }
 
 #teaching h2{
   text-decoration: underline orchid;
+   -webkit-text-decoration-line:  underline;
+   -webkit-text-decoration-color: orchid;
+   -webkit-text-decoration-style: solid;
 }
 
 #music h2{
   text-decoration: underline blue;
+   -webkit-text-decoration-line:  underline;
+   -webkit-text-decoration-color: blue;
+   -webkit-text-decoration-style: solid;
 }
 
 .spin{
@@ -766,6 +787,7 @@
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
+  text-align: -webkit-center;
   cursor: pointer;
 }
 
