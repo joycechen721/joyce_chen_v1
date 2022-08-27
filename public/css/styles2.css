@@ -95,7 +95,6 @@
   .spin{
     width: 50px !important;
     height: 50px !important;
-    font-size: 0.8rem !important;
   }
 }
 
@@ -571,7 +570,7 @@
   height: 550px;
   width: 325px;
   max-width: 47%;
-  border-radius: 5%;
+  border-radius: 15px;
   -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.25);
           box-shadow: 0 0 15px rgba(0,0,0,0.25);
   background-color: white;
@@ -715,10 +714,10 @@
 }
 
 .piedesc{
-    padding: 40px;
+    padding: 30px 40px 40px 40px;
     border-radius: 10px;
     background: url('/images/desc.png');
-    background-position: 25% 5%;
+    background-position: 50% 5%;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -736,6 +735,22 @@
   margin-bottom: 20px;
 }
 
+#achievements h2{
+  text-decoration: underline red;
+}
+
+#workshops h2{
+  text-decoration: underline brown;
+}
+
+#teaching h2{
+  text-decoration: underline orchid;
+}
+
+#music h2{
+  text-decoration: underline blue;
+}
+
 .spin{
   position: absolute;
   top: 50%;
@@ -749,7 +764,8 @@
   color: white;
   box-shadow: 0 5px 15px black;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 1.5rem;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -882,8 +898,10 @@
   border-radius: var(--rounded);
   /* background-image: url('https://i.pinimg.com/564x/3a/cb/97/3acb972188c9da7bdc0eb7e9f073316e.jpg'); */
   /* border: 10px solid #fff; */
-  box-shadow: 0px 0px 0px 1px white;
-  margin-bottom: 30px;
+}
+
+.blog h2{
+  margin: 0 0 15px 0;
 }
 
 #network {
@@ -915,7 +933,7 @@
   letter-spacing: 3px;
   color: #f38a8a;
   text-align: center;
-  background-image: url('https://i.pinimg.com/564x/2e/e2/77/2ee277847b8880f75aebd3a686b80114.jpg');
+  background-image: url('https://i.pinimg.com/564x/73/9b/7f/739b7fe03d670a59dc5fa5f1a8226a13.jpg');
 }
 
 #networktitle a {

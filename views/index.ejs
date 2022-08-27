@@ -243,7 +243,7 @@
           <div class="flex-container">
             <div class="pie">
               <img class = "box" src="images/pie.png" alt="">
-              <button type="button" name="button" class="spin" onclick = "spin()">spin</button>
+              <button type="button" name="button" class="spin" onclick = "spin()">⇨</button>
             </div>
             <div id = "achievements" class="frame piedesc">
               <h2>achievements</h2>
@@ -334,11 +334,13 @@
 <hr>
 
 <section>
-  <div class="container">
+  <div class="container blog">
     <div class="frame">
       <h2>
         blog & rants.
       </h2>
+      <div class="separator">
+      </div>
       <div id="blog">
         <table>
           <tr>
@@ -355,7 +357,7 @@
                       <td>
                         <img src="<%=element.url2%>">
                       </td>
-                      <td style="color: gray; background-color: aliceblue; padding: 10px; width: 220px; height: 215px; font-size: 0.9rem; border-bottom-right-radius: 10px;">
+                      <td style="color: gray; background-color: lavenderblush; padding: 10px; width: 220px; height: 215px; font-size: 0.9rem; border-bottom-right-radius: 10px;">
                         <%=element.input.substring(0, 250) + "..."%>
                         <a href="/blog/<%=element.title%>">Read More</a>
                       </td>
