@@ -84,6 +84,10 @@
   .button2{
     right: 5px !important;
   }
+  .pie {
+    width: 350px !important;
+    height: 350px !important;
+  }
   .pie img {
     width: 350px !important;
     height: 350px !important;
@@ -712,7 +716,9 @@
 
 .piedesc{
     padding: 40px;
-    border-radius: 10%;
+    border-radius: 10px;
+    background: url('/images/desc.png');
+    background-position: 25% 5%;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -722,11 +728,6 @@
   -webkit-transform: scale(1.02);
       -ms-transform: scale(1.02);
           transform: scale(1.02);
-}
-
-#achievements{
-  /* background: #5f51ad;
-  color: white; */
 }
 
 .piedesc h2{
