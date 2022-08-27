@@ -98,9 +98,10 @@
   .pie{
     align-self: center !important;
   }
-  .spin{
+  .pie button{
     width: 50px !important;
     height: 50px !important;
+    text-align: -webkit-center !important;
   }
 }
 
@@ -540,10 +541,10 @@
 
 .other-courses a{
   text-decoration: underline 2.5px orchid;
-   -webkit-text-decoration-line:  underline;
-   -webkit-text-decoration-color: orchid;
-   -webkit-text-decoration-style: solid;
-   -webkit-text-decoration-thickness: 2.5px;
+ -webkit-text-decoration-line:  underline;
+ -webkit-text-decoration-color: orchid;
+ -webkit-text-decoration-style: solid;
+ -webkit-text-decoration-thickness: 2.5px;
   cursor: pointer;
 }
 
@@ -772,7 +773,7 @@
    -webkit-text-decoration-style: solid;
 }
 
-.spin{
+.pie button{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -791,7 +792,7 @@
   cursor: pointer;
 }
 
-.spin:active{
+.pie button:active{
   width: 70px;
   height: 70px;
   font-size: 20px;
