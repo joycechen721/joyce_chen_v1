@@ -67,7 +67,7 @@
     height: 50px !important;
   }
   .fa-brands, .fab, .fa-solid{
-    font-size: 2em !important;
+    font-size: 1.8em !important;
   }
   .left-landing ul{
     padding-inline-start: 20px !important;
@@ -76,7 +76,7 @@
     margin: 0 !important;
   }
   #projects button{
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
   }
   .button1{
     left: 5px !important;
@@ -129,6 +129,9 @@
   }
   .card{
     height: fit-content !important;
+  }
+  .piedesc{
+    margin-left: 0 !important;
   }
 }
 
@@ -278,20 +281,28 @@
 
 .circle {
   float: left;
-  height: 80px;
-  width: 80px;
-  background-color: var(--silver);
+  height: 75px;
+  width: 75px;
+  background-color: hotpink;
   border-radius: 30%;
-  margin: 0 10px 0 10px;
+  margin: 0 12px 0 12px;
 }
 
 .circle:hover{
   background: var(--pinkgradient);
 }
 
+.circle:hover .fa-brands{
+  color: hotpink;
+}
+
+.circle:hover .fa-solid{
+  color: hotpink;
+}
+
 .fa-brands, .fab, .fa-solid{
-  color: black;
-  font-size: 2.5em;
+  color: white;
+  font-size: 2.3em;
   position: relative;
   top: 25%;
 }
@@ -485,8 +496,8 @@
 }
 
 #xp a{
-  -webkit-text-decoration: underline var(--dark-lavendar) 2px;
-          text-decoration: underline var(--dark-lavendar) 2px;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
 }
 
 #xp ul{
@@ -540,7 +551,7 @@
 }
 
 .other-courses a{
-  text-decoration: underline 2.5px orchid;
+  text-decoration: underline 2.5px hotpink;
  -webkit-text-decoration-line:  underline;
  -webkit-text-decoration-color: orchid;
  -webkit-text-decoration-style: solid;
@@ -620,13 +631,14 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   border-radius: 8px;
   z-index: 100;
 }
 
 #projects button:hover{
-  background-color: lightblue;
+  background-color: hotpink;
+  color: white;
 }
 
 .button1{
@@ -724,6 +736,7 @@
 }
 
 .piedesc{
+    margin-left: 40px;
     padding: 30px 40px 40px 40px;
     border-radius: 10px;
     background: url('/images/desc.png');
@@ -1017,7 +1030,7 @@
 .courseframe{
   width: 550px;
   height: 600px;
-  border: 1.5px solid var(--frame);
+  border: 1px solid var(--frame);
   border-radius: var(--rounded);
   box-shadow: 0 0 5px rgba(0,0,0,0.25);
   padding: 20px;

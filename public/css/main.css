@@ -50,7 +50,7 @@ mark{
 
 h1{
   margin: 0 auto 0 auto;
-  font-size: 3.1rem;
+  font-size: 3.3rem;
 }
 
 h2{
@@ -119,8 +119,4 @@ form input, textarea{
 
 table{
   border-spacing: 0 5px;
-}
-
-::selection{
-  background: mistyrose;
 }

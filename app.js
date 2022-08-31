@@ -10,17 +10,21 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 const posts = [];
+const today = new Date();
+const options = {
+  year: 'numeric',
+};
 
 app.get("/", function(req, res){
-  res.render('index', {title: "Joyce Chen", postsArr: posts});
+  res.render('index', {title: "Joyce Chen", postsArr: posts, listTitle: today.toLocaleDateString("en-US", options)});
 });
 
 app.get("/cs31", function(req, res){
-  res.render('cs31', {title: "CS31 Review"});
+  res.render('cs31', {title: "CS31 Review", listTitle: today.toLocaleDateString("en-US", options)});
 });
 
 app.get("/blog", function(req, res){
-  res.render('blog', {postsArr: posts, title: "Blog"});
+  res.render('blog', {postsArr: posts, title: "Blog", listTitle: today.toLocaleDateString("en-US", options)});
 })
 
 app.get("/blog/:postname", function(req, res){
@@ -30,13 +34,13 @@ app.get("/blog/:postname", function(req, res){
     const postContent = element.input;
 
     if(postTitle == requestTitle){
-      res.render('blogpost', {title: postTitle, blogTitle: postTitle, content: postContent})
+      res.render('blogpost', {title: postTitle, blogTitle: postTitle, content: postContent, listTitle: today.toLocaleDateString("en-US", options)})
     }
   })
 })
 
 app.get("/compose", function(req, res){
-  res.render('compose', {title: "Compose"});
+  res.render('compose', {title: "Compose", listTitle: today.toLocaleDateString("en-US", options)});
 })
 
 app.post("/compose", function(req, res){
