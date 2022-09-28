@@ -626,13 +626,13 @@
 #projects button{
   position: absolute;
   top: 50%;
-  background-color: inherit;
+  /* background-color: inherit; */
   border: none;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.5rem;
-  border-radius: 8px;
+  border-radius: 5px;
   z-index: 100;
 }
 
@@ -642,11 +642,11 @@
 }
 
 .button1{
-  left: 25px;
+  left: 20px;
 }
 
 .button2{
-  right:25px;
+  right: 20px;
 }
 
 /* LIFE SECTION */
@@ -737,10 +737,12 @@
 
 .piedesc{
     margin-left: 40px;
-    padding: 30px 40px 40px 40px;
+    padding: 30px 30px 30px 30px;
     border-radius: 10px;
-    background: url('/images/desc.png');
-    background-position: 50% 5%;
+    background: url('https://i.pinimg.com/originals/0a/6f/06/0a6f0697514f5517e35b2e741eaaabed.gif');
+    background-repeat: no-repeat;
+    background-size: 130px 130px;
+    background-position: 100% 90%;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
