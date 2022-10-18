@@ -15,6 +15,7 @@ const options = {
   year: 'numeric',
 };
 
+//listTitle is for the footer partial
 app.get("/", function(req, res){
   res.render('index', {title: "Joyce Chen", postsArr: posts, listTitle: today.toLocaleDateString("en-US", options)});
 });
